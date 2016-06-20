@@ -1,0 +1,103 @@
+body{
+	background-color:#e1f8f4;
+}
+
+#title{
+	background-color:#FFFFFF;
+}
+
+.col-lg-3{
+	background-color: #9cd8dc;
+}
+
+#form_btn{
+	color:#a1a1a1;
+}
+
+#kensaku{
+	background-color: #96d8db; color:#ffffff;
+}
+
+#toukou{
+	background-color: #55acee; color:#ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+
+.navbar-default {
+  background-color: #2fcdb4;
+  border-color: #e7e7e7;
+}
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px dashed #CCCCCC;
+    float: left;
+}
+#loadimg {
+    padding-top: 50px;
+    clear: both;
+    text-align: center;
+}
+
+.onoffswitch {
+    position: relative; width: 65px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 23px; padding: 0; line-height: 23px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #2FCDB4; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #2FCDB4;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 15px; margin: 6px; margin-top:5px; margin-bottom:11px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 38px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+#camera{
+	cursor:pointer
+}

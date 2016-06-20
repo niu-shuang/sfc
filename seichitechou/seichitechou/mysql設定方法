@@ -1,0 +1,24 @@
+mysql設定方法
+
+1.データベースの利用申請
+https://itcsecure.sfc.keio.ac.jp/form/password/にアクセスし、ログイン名・パスワードを入力
+左側カラムのDatabase Passwordをクリック  rXj9npNG
+現在のパスワードを押し、確認する
+もしくは、パスワードの作成を押し、作成する。
+
+
+2.ターミナルを開き、以下のコードを打っていく
+//学校のサーバーにアクセス
+ssh ログイン名@webedit.sfc.keio.ac.jp
+パスワード入力(SFCのログインパスワード)
+
+//mysqlに接続
+mysql -h webdb -u ログイン名 -p
+パスワード入力(1で作成したデータベースのパスワード)
+
+//テーブル作成
+create table ログイン名.テーブル名(id int auto_increment, user_name char(30), path_name char(30), created_at char(30), content char(200), latitude char(30), longitude char(30), likes char(10), delete_code char(10), start char(30), goal char(30), outline char(200), primary key(id));
+
+//テーブルの確認
+show columns from ログイン名.テーブル名;
+うまく表示されていればOK!

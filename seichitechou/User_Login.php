@@ -72,7 +72,7 @@ else
 
 if ($error=='')
 {
-	echo 'Login Susscessful£¡';
+	echo 'Login Susscessful';
 	$_SESSION['UID']=$uid;
 	$_SESSION['userID']=$uname;
 

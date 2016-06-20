@@ -2,14 +2,13 @@
 <?php
 session_start();
 ?>
-<html lang="en"  xmlns:wb=“http://open.weibo.com/wb”>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-        <title>聖地手帳</title>
+        <title>漫步-Walk in the Story</title>
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDfBkCLoapAFTFgfahL-ra9vSseSDEDaq4&sensor=false"></script>
-        <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/whispath.css" rel="stylesheet">
@@ -25,7 +24,7 @@ session_start();
         <?php include_once("analyticstracking.php") ?>
         <div class="container" id="title">
             <span style="float:left">
-                <a href="http://web.sfc.keio.ac.jp/~ni9zhang/seichitechou/index.php"><h1><font color=2fcdb4>聖地手帳</font></h1></a>
+                <a href="http://web.sfc.keio.ac.jp/~ni9zhang/seichitechou/index.php"><h1><font color=2fcdb4>漫步-Walk in the Story</font></h1></a>
             </span>
             <span style="float:right">
                 &nbsp;<br><input id="Regist" type="button" value="Regist" onclick="Regist()" /><br>
@@ -53,19 +52,12 @@ session_start();
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">TimeLine</a> 
-                    <a class="navbar-brand" href="map.html">Map</a>
-                    <a class="navbar-brand" href="radio.html">Radio</a>
-                    <a class="navbar-brand" href="edit.html?user_name=&path_name=&hoge=">Edit</a>
-                    <a class="navbar-brand" href="about.html">About</a>
+                    <a class="navbar-brand" href="index.php">Timeline</a> 
+                    <a class="navbar-brand" href="weibo_view.php">Map</a>
+					<a class="navbar-brand" href="edit_view.php">Edit</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://www.fromfpf.net">From4.5</a></li>
-                  </ul>
-                </div>
                 <!-- /.navbar-collapse --> 
                 <!-- /.container-fluid -->
 
@@ -643,9 +635,6 @@ session_start();
                         });
                         
                     </script> 
-                </div>
-                <div class = "weibo">
-                    <wb:topic topmid="DrHnalXg4" column="n" border="n" width="560" height="1190" tags="%E6%B1%9F%E4%B9%8B%E5%B2%9B" language="zh_cn" version="base" footbar="y" url="http%3A%2F%2Fweb.sfc.keio.ac.jp%2F~ni9zhang%2Fseichitechou%2Findex.php" filter="y" ></wb:topic>
                 </div>
                 <div class="col-lg-9">
                     <div id = "result_print_area"></div>

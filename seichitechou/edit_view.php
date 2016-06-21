@@ -228,11 +228,11 @@ session_start();
 				<?php
 					if (isset($_SESSION['userID']))
 					{
-						echo "<input type=\"text\" id = \"user_name\" name=\"user_name\" size=\"25\" style=\"color:#a1a1a1\" value=\"".$_SESSION['userID']."\"/>";
+						echo '<input type="text" id = "user_name" name="user_name" size="25" style="color:#a1a1a1" value="'.$_SESSION['userID'].'" />';
 					}
 					else
 					{
-						echo "<input type=\"text\" id = \"user_name\" name=\"user_name\" size=\"25\" style=\"color:#a1a1a1\" value=\"User名\"/>";
+						echo '<input type="text" id = "user_name" name="user_name" size="25" style="color:#a1a1a1" value="User名" />';
 					}
 				?>
                 <input type="text" id="path_name" name="path_name" size="25" style="color:#a1a1a1" value="Path名" /><br>
@@ -322,15 +322,11 @@ session_start();
                         var kv = prms[i].split('=');
                         url_prm[kv[0]]=kv[1];
                     }
-                    var req1 = url_prm.user_name;
-                    var req2 = url_prm.path_name;
+					var req2 = url_prm.path_name;
                     var req3 = url_prm.hoge;
                     req_key1 = decodeURI(req1);
                     req_key2 = decodeURI(req2);
                     req_key3 = decodeURI(req3);
-                    if(req_key1 != ""){
-                         document.getElementById("user_name").value = req_key1;
-                    }
                     if(req_key2 != ""){
                         document.getElementById("path_name").value = req_key2;
                     }
@@ -355,7 +351,7 @@ session_start();
                             path_name : req_key2,
                         },
                         dataType:"json",
-                        url: "edit.php",
+                        url: "edit_view.php",
                         success: function(data){
                             var data_array = data;
                             for(var i = 0; i <= data_array[0].length; i++){
@@ -588,7 +584,7 @@ session_start();
                                 processData: false,
                                 contentType: false,
                                 success: function(){
-                                    window.location.href = "edit.html?user_name=" + user_name + "&path_name=" + path_name + "&hoge=" + delete_code;
+                                    window.location.href = "edit_view.php?user_name=" + user_name + "&path_name=" + path_name + "&hoge=" + delete_code;
                                 },
                                 error: function(){
                                     alert("エラー");
@@ -710,7 +706,7 @@ session_start();
                             success: function(data){
                                 if(data == "error"){
                                     alert("エラー");
-                                    window.location.href = "edit.html?user_name=" + user_name + "&path_name=" + path_name + "&hoge=";
+                                    window.location.href = "edit_view.php?user_name=" + user_name + "&path_name=" + path_name + "&hoge=";
                                 }else{
                                     alert("削除しました");
                                     window.location.reload();

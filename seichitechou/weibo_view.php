@@ -92,7 +92,7 @@ session_start();
 		</div>
 		</p>
 		<div class = "weibo" align="center">
-			<wb:topic topmid="DByWtC6sd" column="n" border="n" width="80%" height="1190" tags="%E5%A5%BD%E7%94%A8%E5%90%97" language="zh_cn" version="base" appkey="1uzq4r" refer="y" footbar="y" url="http%3A%2F%2Fweb.sfc.keio.ac.jp%2F~ni9zhang%2Fseichitechou%2Findex.php" filter="n" ></wb:topic>
+			<wb:topic topmid="DByWtC6sd" column="n" border="n" width="80%" height="1190" tags="%23%e7%81%8c%e7%af%ae%e9%ab%98%e6%89%8b%23" language="zh_cn" version="base" appkey="1uzq4r" refer="y" footbar="y" url="http%3A%2F%2Fweb.sfc.keio.ac.jp%2F~ni9zhang%2Fseichitechou%2Findex.php" filter="n" ></wb:topic>
 		</div>
             <script type="text/javascript"> 
                 var n =[];

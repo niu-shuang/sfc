@@ -14,87 +14,7 @@ session_start();
         <script src="http://iwb.jp/s/js/jquery.skOuterClick.js"></script>
 		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
        
-        <script type="text/javascript">
-            function position(){
-                //Geolocateのオプションを設定
-                var geolocateOption = {
-                    success: geolocate_success,
-                    error: geolocate_error,
-                    not_supported: geolocate_notsupport
-                };
-                GMaps.geolocate(geolocateOption); //現在地の取得処理を開始
-            }
-            $(function() {
-                $("#onoffswitch :checkbox").click(function() {
-                    switch_status = switch_status * (-1);
-                    polyline_check(switch_status);
-                });
-                $("#path_switch :checkbox").click(function() {
-                    switch2_status = switch2_status * (-1);
-                    path_check();
-                });
-                $("#req_key1").click(function(){
-                    if($('#req_key1').val() == "User"){
-                        $('#req_key1').val("");
-                    }
-                });
-                $("#req_key1").keyup(function(){
-                    if($('#req_key1').val() != ""){
-                        $('#req_key1').css('color', '#000000');
-                    }
-                });
-                $("#req_key1").skOuterClick(function(){
-                    if($('#req_key1').val() == ""){
-                        $('#req_key1').val("User");
-                        $('#req_key1').css('color', '#a1a1a1');
-                    }
-                });
-                $("#req_key2").click(function(){
-                    if($('#req_key2').val() == "Path"){
-                        $('#req_key2').val("");
-                    }
-                });
-                $("#req_key2").keyup(function(){
-                    if($('#req_key2').val() != ""){
-                        $('#req_key2').css('color', '#000000');
-                    }
-                });
-                $("#req_key2").skOuterClick(function(){
-                    if($('#req_key2').val() == ""){
-                        $('#req_key2').val("Path");
-                        $('#req_key2').css('color', '#a1a1a1');
-                    }
-                });
-            });
-            function polyline_check(switch_status){
-                if(switch_status == 1){
-                    polyline.setVisible(true);
-                }else{
-                    polyline.setVisible(false);
-                }
-            }
-            function path_check(){
-                if(switch2_status == 1){
-                    for (i in markers) {
-                        markers[i].setMap(map);
-                    }
-                }else{
-                    for (i in markers) {
-                        markers[i].setMap(null);
-                    }
-                }
-            }
-        </script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-64495011-2', 'auto');
-          ga('send', 'pageview');
-
-        </script>
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/whispath.css" rel="stylesheet">
@@ -107,7 +27,7 @@ session_start();
         <![endif]-->
     </head>
     
-    <body onLoad="get_data(); polyline_check(1)">
+    <body onLoad="get_data()">
         <?php include_once("analyticstracking.php") ?>
         <div class="container" id="title">
             <span style="float:left">
@@ -172,7 +92,7 @@ session_start();
 		</div>
 		</p>
 		<div class = "weibo" align="center">
-			<wb:topic topmid="Dvl8yCpxl" column="n" border="n" width="80%" height="1190" tags="%E7%A9%BF%E8%B6%8A%E6%97%B6%E7%A9%BA%E7%9A%84%E5%B0%91%E5%A5%B3" language="zh_cn" version="base" appkey="1uzq4r" refer="y" footbar="y" url="http%3A%2F%2Fweb.sfc.keio.ac.jp%2F~ni9zhang%2Fseichitechou%2Findex.php" filter="n" ></wb:topic>
+			<wb:topic topmid="DByWtC6sd" column="n" border="n" width="80%" height="1190" tags="%E5%A5%BD%E7%94%A8%E5%90%97" language="zh_cn" version="base" appkey="1uzq4r" refer="y" footbar="y" url="http%3A%2F%2Fweb.sfc.keio.ac.jp%2F~ni9zhang%2Fseichitechou%2Findex.php" filter="n" ></wb:topic>
 		</div>
             <script type="text/javascript"> 
                 var n =[];

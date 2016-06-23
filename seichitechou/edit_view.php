@@ -200,7 +200,7 @@ session_start();
                         <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.php">TimeLine</a> 
-                    <a class="navbar-brand" href="weibo_view.php">Map</a>
+                    <a class="navbar-brand" href="map_view.php">Map</a>
                     <a class="navbar-brand" href="edit_view.php">Edit</a>
 				</div>
                     <!-- Collect the nav links, forms, and other content for toggling -->

@@ -164,8 +164,8 @@ session_start();
         <div class="InnerNavi">
 			<table width="200" border="1" cellpadding="1" cellspacing="1" align="center">
 				<tr>
+				    <td width="100" align="center"><a href='map_view.php'>record</td>
 					<td width="100" align="center"><a href='weibo_view.php'>weibo</td>
-					<td width="100" align="center"><a href='map_view.php'>record</td>
 				</tr>
 			</table>
 		</div>
